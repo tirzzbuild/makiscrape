@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="theme-color" content="#fcf9ea">
+  <meta name="description" content="Direktori source makiscrape untuk downloader, tools, dan pencarian. Jelajahi kategori, baca source lengkap, lalu sesuaikan untuk kebutuhanmu.">
+  <title>makiscrape — Direktori Tools &amp; Source</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a class="logo-area" href="#home" aria-label="makiscrape, beranda">
+        <span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span>
+        <span class="logo-text"><strong>makiscrape</strong><span>TOOL DIRECTORY · V 1.0</span></span>
+      </a>
+
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navOverlay">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+      <nav class="nav-overlay" id="navOverlay" aria-label="Navigasi utama">
+        <a class="active" href="#home"><span>HOME</span></a>
+        <a href="#kode"><span>LIBRARY</span></a>
+        <a href="#about"><span>ABOUT</span></a>
+        <a class="channel-link" href="https://whatsapp.com/channel/0029Vb90cvLD38CO6ALFyy1D" target="_blank" rel="noopener noreferrer" aria-label="Ikuti saluran WhatsApp makiscrape"><span>SALURAN ↗</span></a>
+        <div class="status-item"><span>LIBRARY</span><span class="status-dot">05 SOURCE</span></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-layout" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="badge-online"><span class="dot-online" aria-hidden="true"></span><span>MAKISCRAPE / TOOL DIRECTORY</span></div>
+        <h1 id="hero-title">Temukan kode scrape<br><span class="highlight-premium">di sini</span></h1>
+        <p>Buka source code yang kamu butuhkan untuk project-mu. Banyak kode scrape tersedia, bebas pilih.</p>
+        <div class="cta-group">
+          <a class="brutal-btn btn-primary" href="#kode"><span>JELAJAHI KODE</span><span aria-hidden="true">↗</span></a>
+          <a class="brutal-btn btn-secondary" href="#about"><span>ABOUT MAKISCRAPE</span></a>
+        </div>
+        <div class="hero-meta"><span>05 SOURCE</span><i></i><span>04 KATEGORI</span><i></i><span>UPDATE V1.0</span></div>
+      </div>
+
+
+    </section>
+
+    <section class="content-section code-section" id="kode" aria-labelledby="kode-title">
+      <div class="section-heading">
+        <span class="section-kicker">MAKISCRAPE DIRECTORY · 05 SOURCE</span>
+        <h2 id="kode-title">Cari yang dibutuhkan.</h2>
+        <p>Jelajahi downloader, tools, dan pencarian dari satu katalog. Gunakan source pada layanan serta data yang memang boleh kamu akses.</p>
+      </div>
+
+      <div class="filter-toolbar">
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="snippetSearch" type="search" placeholder="Cari tool, platform, atau fungsi..." autocomplete="off" aria-label="Cari source">
+        </label>
+        <div class="filter-group category-filters" role="group" aria-label="Filter kategori tool">
+          <button class="filter-btn active" type="button" data-filter-type="category" data-filter="all" aria-pressed="true">Semua</button>
+          <button class="filter-btn" type="button" data-filter-type="category" data-filter="downloader" aria-pressed="false">Downloader</button>
+          <button class="filter-btn" type="button" data-filter-type="category" data-filter="tools" aria-pressed="false">Tools</button>
+          <button class="filter-btn" type="button" data-filter-type="category" data-filter="stalk" aria-pressed="false">Stalk</button>
+          <button class="filter-btn" type="button" data-filter-type="category" data-filter="search" aria-pressed="false">Search</button>
+        </div>
+      </div>
+
+      <div class="results-line"><span id="resultCount">5 source ditampilkan</span><span>PREVIEW · BACA LENGKAP · SALIN ATAU UNDUH</span></div>
+      <div class="snippet-grid" id="snippetGrid">
+        <article class="brutal-box snippet-card" data-category="tools" data-tags="tools web halaman publik parser judul">
+          <div class="snippet-meta"><span class="category-tag">TOOLS</span><span class="level-tag">PEMULA</span></div>
+          <h3>Parse halaman publik</h3>
+          <p>Ambil judul halaman publik menggunakan parser dokumen.</p>
+          <div class="code-frame">
+            <div class="code-toolbar"><span class="file-name"><i></i><i></i><i></i> page-title</span><span class="code-type">PREVIEW SOURCE</span></div>
+            <pre><code>response = requests.get(url, timeout=10)
+soup = BeautifulSoup(response.text, "html.parser")
+print(soup.title.get_text(strip=True))</code></pre>
+          </div>
+          <details class="source-details" data-source="snippets/source-01.txt">
+            <summary>LIHAT SOURCE LENGKAP</summary>
+            <pre><code>Source dimuat saat dibuka...</code></pre>
+          </details>
+          <div class="snippet-actions">
+            <button class="copy-btn" type="button" data-code-src="snippets/source-01.txt">SALIN FULL SOURCE</button>
+            <a class="download-btn" href="snippets/source-01.txt" download>UNDUH SOURCE</a>
+          </div>
+          <div class="snippet-footer"><span>TOOLS</span><span>parser</span><span>timeout 10s</span></div>
+        </article>
+
+        <article class="brutal-box snippet-card" data-category="search" data-tags="search data publik endpoint contoh">
+          <div class="snippet-meta"><span class="category-tag">SEARCH</span><span class="level-tag">PEMULA</span></div>
+          <h3>Cari data dari endpoint</h3>
+          <p>Contoh mengambil satu record dari endpoint data demo publik.</p>
+          <div class="code-frame">
+            <div class="code-toolbar"><span class="file-name"><i></i><i></i><i></i> public-data</span><span class="code-type">PREVIEW SOURCE</span></div>
+            <pre><code>response = requests.get(url, timeout=10)
+item = response.json()
+print("Judul:", item["title"])</code></pre>
+          </div>
+          <details class="source-details" data-source="snippets/source-02.txt">
+            <summary>LIHAT SOURCE LENGKAP</summary>
+            <pre><code>Source dimuat saat dibuka...</code></pre>
+          </details>
+          <div class="snippet-actions">
+            <button class="copy-btn" type="button" data-code-src="snippets/source-02.txt">SALIN FULL SOURCE</button>
+            <a class="download-btn" href="snippets/source-02.txt" download>UNDUH SOURCE</a>
+          </div>
+          <div class="snippet-footer"><span>SEARCH</span><span>ENDPOINT PUBLIK</span><span>timeout 10s</span></div>
+        </article>
+
+        <article class="brutal-box snippet-card" data-category="tools" data-tags="tools halaman publik heading parser">
+          <div class="snippet-meta"><span class="category-tag">TOOLS</span><span class="level-tag">MENENGAH</span></div>
+          <h3>Ekstrak heading halaman</h3>
+          <p>Ambil konten halaman publik lalu pilih bagian yang dibutuhkan.</p>
+          <div class="code-frame">
+            <div class="code-toolbar"><span class="file-name"><i></i><i></i><i></i> parse-heading</span><span class="code-type">PREVIEW SOURCE</span></div>
+            <pre><code>const html = await response.text();
+const $ = cheerio.load(html);
+console.log($("h1").first().text().trim());</code></pre>
+          </div>
+          <details class="source-details" data-source="snippets/source-03.txt">
+            <summary>LIHAT SOURCE LENGKAP</summary>
+            <pre><code>Source dimuat saat dibuka...</code></pre>
+          </details>
+          <div class="snippet-actions">
+            <button class="copy-btn" type="button" data-code-src="snippets/source-03.txt">SALIN FULL SOURCE</button>
+            <a class="download-btn" href="snippets/source-03.txt" download>UNDUH SOURCE</a>
+          </div>
+          <div class="snippet-footer"><span>TOOLS</span><span>selector</span><span>halaman publik</span></div>
+        </article>
+
+        <article class="brutal-box snippet-card" data-category="tools" data-tags="tools halaman dinamis browser render publik">
+          <div class="snippet-meta"><span class="category-tag">TOOLS</span><span class="level-tag">MENENGAH</span></div>
+          <h3>Baca konten dinamis</h3>
+          <p>Render halaman publik untuk membaca konten setelah halaman dimuat.</p>
+          <div class="code-frame">
+            <div class="code-toolbar"><span class="file-name"><i></i><i></i><i></i> dynamic-page</span><span class="code-type">PREVIEW SOURCE</span></div>
+            <pre><code>await page.goto(url, { waitUntil: "domcontentloaded" });
+const heading = await page.locator("h1").first().textContent();
+console.log(heading?.trim());</code></pre>
+          </div>
+          <details class="source-details" data-source="snippets/source-04.txt">
+            <summary>LIHAT SOURCE LENGKAP</summary>
+            <pre><code>Source dimuat saat dibuka...</code></pre>
+          </details>
+          <div class="snippet-actions">
+            <button class="copy-btn" type="button" data-code-src="snippets/source-04.txt">SALIN FULL SOURCE</button>
+            <a class="download-btn" href="snippets/source-04.txt" download>UNDUH SOURCE</a>
+          </div>
+          <div class="snippet-footer"><span>TOOLS</span><span>selector</span><span>public access</span></div>
+        </article>
+
+        <article class="brutal-box snippet-card capcut-card" data-category="downloader" data-tags="downloader template mp4 metadata link publik capcut zane">
+          <div class="snippet-meta"><span class="category-tag">DOWNLOADER</span><span class="level-tag">FULL SOURCE</span></div>
+          <h3>CapCut Template Downloader</h3>
+          <p>Ambil metadata template publik dan URL video yang tersedia. Gunakan hanya untuk konten milik sendiri atau yang kamu punya izin untuk unduh.</p>
+          <div class="code-frame">
+            <div class="code-toolbar"><span class="file-name"><i></i><i></i><i></i> capcut-template</span><span class="code-type">PREVIEW SOURCE</span></div>
+            <pre><code>const result = await download(templateLink);
+console.log(JSON.stringify(result, null, 2));</code></pre>
+          </div>
+          <details class="source-details" data-source="snippets/capcut-template-downloader.mjs">
+            <summary>LIHAT SOURCE LENGKAP</summary>
+            <pre><code>Source dimuat saat dibuka...</code></pre>
+          </details>
+          <div class="snippet-actions">
+            <button class="copy-btn" type="button" data-code-src="snippets/capcut-template-downloader.mjs">SALIN FULL SOURCE</button>
+            <a class="download-btn" href="snippets/capcut-template-downloader.mjs" download>UNDUH SOURCE</a>
+          </div>
+          <div class="snippet-footer"><span>DOWNLOADER</span><span>METADATA</span><span>URL VIDEO</span></div>
+          <p class="snippet-credit">Sumber: Hanzo · <a href="https://whatsapp.com/channel/0029Vb90cvLD38CO6ALFyy1D" target="_blank" rel="noopener noreferrer">Berikut sumbernya ↗</a></p>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" role="status" aria-live="polite" hidden>Tidak ada source yang cocok. Coba kata kunci atau kategori lain.</div>
+    </section>
+
+    <section class="about-section" id="about" aria-label="Tentang MakiScrape">
+      <div class="about-note brutal-box">
+        <p class="about-copy">MakiScrape menyediakan kumpulan source code scraper siap pakai, mulai dari downloader hingga tools berbasis API, untuk memudahkan developer mengembangkan project mereka.</p>
+        <p class="about-tagline">MakiScrape — <span>Scraping made simple.</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2><span class="footer-icon" aria-hidden="true">&lt;/&gt;</span>makiscrape</h2>
+          <p>Direktori source untuk downloader, utilities, dan pencarian yang mudah dijelajahi.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navigasi footer">
+          <h3>NAVIGASI</h3>
+          <ul><li><a href="#home">HOME</a></li><li><a href="#kode">LIBRARY</a></li><li><a href="#about">ABOUT</a></li></ul>
+          <a class="channel-footer-link" href="https://whatsapp.com/channel/0029Vb90cvLD38CO6ALFyy1D" target="_blank" rel="noopener noreferrer">IKUTI SALURAN MAKISCRAPE ↗</a>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>© 2026 MAKISCRAPE · CODE LIBRARY</p><p>PUBLIC DATA · ACCESS RESPONSIBLY</p></div>
+    </div>
+  </footer>
+
+  <div class="copy-fallback" id="copyFallback" hidden role="dialog" aria-modal="true" aria-labelledby="copyFallbackTitle">
+    <div class="copy-modal">
+      <div class="copy-modal-heading">
+        <h2 id="copyFallbackTitle">Clipboard dibatasi preview</h2>
+        <button class="copy-close" type="button" data-close-copy aria-label="Tutup">×</button>
+      </div>
+      <p id="copyFallbackNote">Kode akan ditampilkan di sini agar bisa dipilih dan disalin manual.</p>
+      <textarea id="copyFallbackText" readonly spellcheck="false" aria-label="Source untuk disalin manual"></textarea>
+      <div class="copy-modal-actions">
+        <button class="brutal-btn btn-secondary" id="selectCopyText" type="button">PILIH SEMUA</button>
+        <button class="brutal-btn btn-primary" type="button" data-close-copy>TUTUP</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
